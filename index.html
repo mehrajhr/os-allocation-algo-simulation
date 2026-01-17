@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Allocation Simulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-layout">
+      <!-- LEFT DETAILS -->
+      <div id="algoLeft" class="algo-box"></div>
+
+      <!-- MAIN -->
+      <div class="container">
+        <h1 style="text-align: center;">Memory Allocation Simulation</h1>
+
+        <div class="card">
+          <label>Memory Blocks (comma separated)</label>
+          <input type="text" id="blocks" placeholder="100,500,200,300,600" />
+
+          <label>Process Sizes (comma separated)</label>
+          <input type="text" id="processes" placeholder="212,417,112,426" />
+
+          <label>Select Algorithm</label>
+          <select id="algorithm">
+            <option value="">-- Select --</option>
+            <option value="first">First Fit</option>
+            <option value="best">Best Fit</option>
+            <option value="worst">Worst Fit</option>
+            <option value="next">Next Fit</option>
+          </select>
+
+          <button onclick="simulate()">Simulate</button>
+          <button class="reset" onclick="resetAll()">Reset</button>
+        </div>
+
+        <div id="result"></div>
+        <div id="blockStatus"></div>
+      </div>
+
+      <!-- RIGHT DETAILS -->
+      <div id="algoRight" class="algo-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
