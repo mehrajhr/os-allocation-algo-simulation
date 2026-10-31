@@ -5,7 +5,7 @@ An interactive web-based simulator illustrating operating system memory allocati
 ---
 
 ## 🚀 Live Demo
-* **Live Website:** [Insert Live URL Here]
+* **Live Website:** https://mehrajhr.github.io/os-allocation-algo-simulation/
 
 ---
 
